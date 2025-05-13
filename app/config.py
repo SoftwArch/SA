@@ -16,10 +16,10 @@ class Settings(BaseSettings):
     NEO4J_USER: str = os.getenv("NEO4J_USER", "neo4j")
     NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "your_password")
 
-    # LLM配置
-    LLM_API_KEY: str = os.getenv("LLM_API_KEY", "")
-    LLM_MODEL_NAME: str = os.getenv("LLM_MODEL_NAME", "gpt-3.5-turbo")
-    LLM_API_BASE: str = os.getenv("LLM_API_BASE", "https://api.openai.com/v1")
+    # DeepSeek R1 API配置
+    DEEPSEEK_API_KEY: str = os.getenv("DEEPSEEK_API_KEY", "")
+    DEEPSEEK_MODEL_NAME: str = os.getenv("DEEPSEEK_MODEL_NAME", "deepseek-r1")
+    DEEPSEEK_API_BASE: str = os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com/v1")
 
     # 缓存配置
     REDIS_HOST: str = os.getenv("REDIS_HOST", "localhost")
